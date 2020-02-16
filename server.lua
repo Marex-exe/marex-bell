@@ -1,14 +1,14 @@
 local CooldownActive = false
 
-RegisterServerEvent('p1-marex:SendPage')
-AddEventHandler('p1-marex:SendPage', function(location)
+RegisterServerEvent('marex-bell:SendPage')
+AddEventHandler('marex-bell:SendPage', function(location)
     if not CooldownActive then
         if Config.Mythic then
             TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'success', text = _U('successfulPage')})
         else 
             TriggerClientEvent('esx:showNotification', source, _U('successfulPage'))
         end
-        TriggerClientEvent('p1-marex:Page', -1, location)
+        TriggerClientEvent('marex-bell:Page', -1, location)
         if Config.CoolDown ~= 0 then
             CooldownTimer()
         end
