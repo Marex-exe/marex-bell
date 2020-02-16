@@ -9,7 +9,7 @@ Config.TextDrawDistance = 2 -- TRUST ME DON'T TAKE THIS HIGH. (10 is around the 
 --
 Config.Mythic = false -- If you have Mythic noti you can set this one to true, Otherwise it will be GTA noti. #GTANOTIFY GANG (:
 --
-Config.CoolDown = 0 -- In minutes (The cooldown) (0 = NO COOLDOWN, #SPAM L TILL I DIE POGU MUMUMU VIA: https://youtu.be/ak70atLm_ys?list=PL7Gwu2A3aBia-rIRyKlBv2vMETc3fVAFn Hell yeah)
+Config.CoolDown = 1 -- In minutes (The cooldown) (0 = NO COOLDOWN, #SPAM L TILL I DIE POGU MUMUMU VIA: https://youtu.be/ak70atLm_ys?list=PL7Gwu2A3aBia-rIRyKlBv2vMETc3fVAFn Hell yeah)
 --
 Config.Locations = {
     MissionRow = {
