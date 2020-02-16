@@ -27,15 +27,15 @@ Citizen.CreateThread(function ()
                 local location = v
                 DrawText3D(v.Coords.x, v.Coords.y, v.Coords.z - 1.0, _U('Text'))
                 if IsControlJustReleased(1, 182) then -- 182 = L
-                    TriggerServerEvent('p1-marex:SendPage', location)
+                    TriggerServerEvent('marex-bell:SendPage', location)
                 end
 			end
 		end
 	end
 end)
 
-RegisterNetEvent('p1-marex:Page')
-AddEventHandler('p1-marex:Page', function(location)
+RegisterNetEvent('marex-bell:Page')
+AddEventHandler('marex-bell:Page', function(location)
     for k,v in pairs(location.JobsToPage) do
         if PlayerData.job and PlayerData.job.name == v then
             TriggerEvent("chatMessage", "Polisen", {255, 0, 0}, _U('notificationText', location.DisplayName))
